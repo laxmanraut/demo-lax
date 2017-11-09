@@ -1,8 +1,8 @@
 const Hapi = require('hapi');
 
-var server = new Hapi.Server(process.env.PORT || 3000, '0.0.0.0');
+var server = new Hapi.Server();
 
-//server.connection({port: 5000});
+server.connection({port: ~~process.env.PORT | 8000});
 
 
 server.route([
