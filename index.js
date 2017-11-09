@@ -10,6 +10,7 @@ server.route([
         method:'GET',
         path:'/',
         handler: function(request, reply){
+            console.log('request recieved');
             reply('done');
         }
     }
