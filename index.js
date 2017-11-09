@@ -1,6 +1,6 @@
 const Hapi = require('hapi');
 
-var server = new Hapi.Server(~~process.env.PORT || 3000, '0.0.0.0');
+var server = new Hapi.Server(process.env.PORT || 3000, '0.0.0.0');
 
 //server.connection({port: 5000});
 
